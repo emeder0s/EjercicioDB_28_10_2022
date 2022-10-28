@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS taxis (
  matricula VARCHAR(10) NOT NULL,
  modelo VARCHAR(50),
  marca VARCHAR(50),
- fk_id_propietarios INT NOT NULL,
+ fk_id_propietarios INT,
  PRIMARY KEY(id),
  FOREIGN KEY (fk_id_propietarios) REFERENCES propietarios(id) ON DELETE SET NULL #EJERCICIO 4 -añadida esta última parte
 );
